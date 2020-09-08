@@ -4,8 +4,11 @@
 		<title>HBO Max Recommener</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/main.css') }}">
+		<noscript><link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='assets/css/noscript.css') }}" /></noscript>
+	<!--
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 	</head>
 	<body class="is-preload">
 
@@ -26,7 +29,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="icons">
-							<li><a href="https://github.com/mychetan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/mychetan/content_based_recommender" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -44,19 +47,31 @@
 											<input type="text" name="Title">
 										</p>
 										<p>
+											<label for="Top">Top:</label>
+											<input type="number" name="Top" id="Top">
+										</p>
+										<p>
 											<button class="button large">Submit</button>
 										</p>
 									</form>
 			</div>
 
-		<!-- Scripts -->
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+	
+			<!-- Scripts 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js"></script> -->
 
 	</body>
 </html>

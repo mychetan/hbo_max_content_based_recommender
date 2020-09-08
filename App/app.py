@@ -2,7 +2,7 @@ import numpy as np
 from flask import Flask, Response, request, render_template
 import static.models as model
 
-app = Flask('recommender_app', static_folder="/User/mychtan/GA/Projects/capstone_project/App/static")
+app = Flask('recommender_app', static_folder="/Users/mychetan/GA/Projects/content_based_recommender/App/static")
 
 @app.route('/')
 def home():
@@ -12,7 +12,8 @@ def home():
 def submit():
     data = request.args
     title = str(data['Title'])
-    recommender = model.recommender_3(title)
+    top = int(data['Top'])
+    recommender = model.recommender_3(title, top)
     df = recommender[['title', 'year', 'plot', 'type']]
     return render_template('elements.html', title=title, column_names=df.columns.values, 
     row_data=list(df.values.tolist()), link_column= "title", zip=zip)

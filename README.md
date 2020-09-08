@@ -30,7 +30,7 @@ I establish a Content-Based Recommender system that uses Natural Language Proces
 - capstone_presentation.pdf
 - README.md
 - images: stores the images used in the README
-- App: contain app.py for the recommender and associated html files
+- App: contain app.py for the app and associated html, css, and javascript files
 - **Code Directory:**
     - 01_data_collection_cleaning.ipynb: Notebook code for collecting and cleaning HBO Max data. 
     - 02_EDA.ipynb: Notebook code for HBO Max Data EDA
@@ -132,7 +132,7 @@ The modeling process can be broken down into three categories: Simple Recommende
 
 2. **Plot, Genre, and encoded MPAA/TV Ratings:** To address the problems from Recommender 4, I decided to combine the procedure from Recommender 3 and 4. However, instead of using IMDB ratings, I used the average between the IMDB and TMDB ratings. The resulting recommendations did better than Recommender 4. I began to see more suggested titles similar to South Park. However, it still exhibits recommendations that are different from the testing title. 
 
-**Recommender 3 was used as demo in a flask app. Please look as App directory for details**
+**Recommender 3 was used for demo in a flask app. Please look as App directory for details**
 
 ---
 
@@ -147,6 +147,7 @@ As mentioned earlier future aspiration is integrating it into the HBO Max app to
 ---
 
 ### References:
+- HTML template taken from https://html5up.net/
 - https://sigmoidal.io/recommender-systems-recommendation-engine/
 - https://www.statista.com/statistics/1136139/hbo-now-to-hbo-max-subscribers-post-launch-us/
 - https://www.statista.com/statistics/1116918/possible-hbo-max-subscribers-by-generation/
