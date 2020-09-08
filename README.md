@@ -2,13 +2,13 @@
 
 ---
 ### Content: 
-- [Problem Statement](Problem-Statement:)
-- [Executive Summary](Executive-Summary:)
-- [Project Files](Project-Files-(Repository-Organization):)
+- [Problem Statement](#Problem-Statement:)
+- [Executive Summary](#Executive-Summary:)
+- [Project Files](#Project-Files-(Repository-Organization):)
 - [Data Directory](Data-Directory:)
-- [Data Collection and Cleaning](Data-Collection-and-Cleaning:)
-- [Modeling](Modeling:)
-- [Conclusion/ Recommendations/Future Improvements](Conclusion/-Recommendations/-Future-Improvements:)
+- [Data Collection and Cleaning](#Data-Collection-and-Cleaning:)
+- [Modeling](#Modeling:)
+- [Conclusion/ Recommendations/Future Improvements](#Conclusion/-Recommendations/-Future-Improvements:)
 
 ---
 
