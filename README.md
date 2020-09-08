@@ -119,7 +119,7 @@ Furthermore, the majority of HBO Max content has an average rating of between 5-
 
 ---
 ### Modeling:
-The modeling process can be broken down into three categories: Simple Recommender, Content-Based Recommender using TfidVectorizer, and Content-Based Recommender using BERT. 
+The modeling process can be broken down into three categories: Simple Recommender, Content-Based Recommender using TfidVectorizer, and Content-Based Recommender using BERT. Results are evaluated based on personal judgement and through google recommemdations. 
 
 **Simple Recommender:** This recommender follows a very straightforward approach. It uses various filtering techniques to get the recommended titles. For this recommender, the goal is to build a generalized system that showcases movies/shows that fall within the same genre. Results are then sorted through an engineered feature that multiples the popularity score with IMDB ratings. The logic behind this sorting is that audiences tend to prefer popular shows/movies with high ratings. Although successful, the model suffers from extreme limitations. First, it lacks user personalization, where it will continue to provide the same recommendations to anyone as long as they put the same genre. Second, the established link between contents is relatively shallow; it only considers genre, IMDB ratings, and popularity score, explaining the lack of personalization. 
 
