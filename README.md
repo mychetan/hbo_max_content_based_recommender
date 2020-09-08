@@ -2,13 +2,14 @@
 
 ---
 ### Content: 
-- [Problem Statement](#Problem-Statement:)
-- [Executive Summary](#Executive-Summary:)
-- [Project Files](#Project-Files-(Repository-Organization):)
-- [Data Directory](Data-Directory:)
-- [Data Collection and Cleaning](#Data-Collection-and-Cleaning:)
-- [Modeling](#Modeling:)
-- [Conclusion/ Recommendations/Future Improvements](#Conclusion/-Recommendations/-Future-Improvements:)
+- Problem Statmenet
+- Executive Summary
+- Project Files
+- Data Directory
+- Data Collection and Cleaning
+- Modeling
+- Conclusion/Recommendation/Future Improvements
+- Reference
 
 ---
 
@@ -136,7 +137,7 @@ The modeling process can be broken down into three categories: Simple Recommende
 
 ---
 
-### Conclusion/ Reccomendations/ Future Improvements:
+### Conclusion/Reccomendations/Future Improvements:
 
 My recommendation to HBO Max executives is to incorporate Recommender 3 into the existing HBO Max application. It is a Content-Based recommender system that is built on the current HBO Max library. This will be a great next move for the company due to the benefits of Recommender Systems. First, it can improve user's retention rate; catering to user's preferences can lead to long term loyal subscribers. Second, serving similar content leads to habit development that influences users usage pattern. Third, there is a strong correlation between view counts of a video and its top referer video. Lastly, incorporating this recommender will make it easier for subscribers to discover new content without connecting to another external website. 
 
