@@ -2,13 +2,13 @@
 
 ---
 ### Content: 
-- [Problem Statement](#Problem-Statement:)
-- [Executive Summary](#Executive-Summary:)
-- [Project Files](#Project-Files-(Repository-Organization):)
-- [Data Directory](#Data-Directory:)
-- [Data Collection and Cleaning](#Data-Collection-and-Cleaning:)
-- [Modeling](#Modeling:)
-- [Conclusion/ Reccomendations/Future Improvements](#Conclusion/-Reccomendations/-Future-Improvements:)
+- [Problem Statement](Problem-Statement:)
+- [Executive Summary](Executive-Summary:)
+- [Project Files](Project-Files-(Repository-Organization):)
+- [Data Directory](Data-Directory:)
+- [Data Collection and Cleaning](Data-Collection-and-Cleaning:)
+- [Modeling](Modeling:)
+- [Conclusion/ Recommendations/Future Improvements](Conclusion/-Recommendations/-Future-Improvements:)
 
 ---
 
@@ -142,7 +142,7 @@ My recommendation to HBO Max executives is to incorporate Recommender 3 into the
 
 To differentiate HBO Max from other streaming services, I did not add any bias towards HBO original titles. This is because users' primary concern from other platforms is that recommender systems keep returning original or in-house contents; these remove opportunities to find hidden gems. Similarly, series creators follow the same sentiment, where their creations get canceled due to the higher priority for original titles. Through this method, it gives every title an even playing field for getting recommended. 
 
-As mentioned earlier future aspiration is integrating it into the HBO Max app to offer personalized recommendations to users. Through this, I would also like to conduct an A/B testing with the current HBO interface to test the recommender effectiveness. Lastly, this recommender is just a starting point. Opportunity for improvement includes adding a Collaborative Filtering to Recommender 3 to generate a hybrid system. Additionally, I would like to apply a deep learning model, such as reinforcement learning, so that the system can continuously grow the more the user uses HBO Max. Lastly, I would like to add features, such as directors, keywords, and actors, to the proposed recommender. These additional features will add more complexity to the recommender, resulting in better clustering of similar titles.  
+As mentioned earlier future aspiration is integrating it into the HBO Max app to offer personalized recommendations to users. Once combined, I would like to conduct various A/B testing with the current HBO interface to test the recommender's effectiveness and learn more about the HBO Max demographic. This recommender is just a starting point. There is still plenty of opportunities for future improvement. First, incorporating Collaborative Filtering to Recommender 3 will better fine-tune the recommender's personalization. Second, applying a deep learning model, such as reinforcement learning, so that the system can continuously grow, the more the user uses HBO Max. Lastly, adding features, such as directors, keywords, and actors, to the proposed recommender. These additional features will add more complexity to the recommender, resulting in better clustering of similar titles.  
 
 ---
 
