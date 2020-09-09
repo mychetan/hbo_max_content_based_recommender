@@ -21,7 +21,7 @@ HBO Max is a streaming service by AT&T, and Warner Media launched on May 27, 202
 
 ### Executive Summary: 
 
-I establish a Content-Based Recommender system that uses Natural Language Processing (NLP) on a title's genre and plot. Aggregating this vectorized matrix to numerical features such as IMDB rating and encoded MPAA ratings to generate other contents similar to the inputted title. Cosine similarity was used as a basis to filter similar content. The final product will be deployed in Heroku as a proof of concept of the Recommender system. 
+I establish a Content-Based Recommender system based on HBO Max library that uses Natural Language Processing (NLP). The recommender aggregates a vectorized matrix, consisting of the title's genre and plot, to numerical features, such as IMDB rating and encoded MPAA ratings. This combined matrix is used to calculate cosine similarity to find other HBO Max contents similar to the inputted title. The final product was arranged into an app (app.py) found in the App directory. 
 
 ---
 
