@@ -2,7 +2,7 @@ import numpy as np
 from flask import Flask, Response, request, render_template
 import static.models as model
 
-app = Flask('recommender_app', static_folder="/Users/mychetan/GA/Projects/content_based_recommender/App/static")
+app = Flask('recommender_app', static_folder="/Users/mychetan/Projects/content_based_recommender/App/static")
 
 @app.route('/')
 def home():
