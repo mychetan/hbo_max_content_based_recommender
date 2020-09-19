@@ -2,30 +2,30 @@
 
 ---
 ### Content: 
-- Problem Statement
-- Executive Summary
-- Project Files
-- Data Directory
-- Data Collection and Cleaning
-- Modeling
-- Conclusion/Recommendation/Future Improvements
-- References
+- [Problem Statement](#Problem-Statement)
+- [Executive Summary](#Executive-Summary)
+- [Project Files](#Project-Files)
+- [Data Directory](#Data-Directory)
+- [Data Collection and Cleaning](#Data-Collection-and-Cleaning)
+- [Modeling](#Modeling)
+- [Conclusion, Recommendations, and Future Improvements](#Conclusion,-Recommendations,-and-Future-Improvement)
+- [References](#Reference)
 
 ---
 
-### Problem Statement: 
+### Problem Statement
 
 On May 27, 2020, AT&T and Warner Media launched their newly re-invented streaming service called HBO Max. It boasts over 10,000 hours of content with 1980 titles (1610 movies and 370 shows). Additionally, it's partnered with 35 content providers ranging from DC Comics, Sesame Workshop, Studio Ghibli, Cartoon Network, Adult Swim, Bad Robot Production, etc. However, with all of its excellent content, it is falling behind against other competitors. Upon inspection of its interface, a noticeable missing component is the "Recommended for you" section. Recommender systems have become an industry standard. Its usage is seen across various streaming services, such as Netflix and Hulu. HBO did try to address this issue with [Recommended by Human](https://www.humanreco.hbo.com/), where users can watch testimonies or read tweets about HBO content. As nicely designed, the webpage is, however, it lacks efficiency in user interface. For one, users will have to go to an external website to get recommendations. Second, it is a not well-known website. As a fellow HBO Max user, I did not know this existed until I did a deep dive into the HBO Max platform. Therefore, I created a Content-Based Recommender System build on HBO Max current library to address the issues I have mentioned above. This system uses subscriber's watch history to return similar titles based on genre, MPAA/TV rating, plot summary, and IMDB ratings. This project aims to introduce a system to incorporate into the existing HBO Max app so that it will be more accessible for HBO Max subscribers to discover new content.  
 
 ---
 
-### Executive Summary: 
+### Executive Summary 
 
 I establish a Content-Based Recommender system built on HBO Max library using Natural Language Processing (NLP). It first creates a vectorized matrix using the title's genre and plot. This matrix is then aggregated to the title's numerical features, such as IMDB and encoded MPAA ratings. A cosine similarity is calculated from the generated matrix to return similar contents to the user based on inputted title (previously watch history). The final recommender system is arranged into a flask app located in the App directory called app.py. 
 
 ---
 
-### Project Files (Repository Organization):
+### Project Files (Repository Organization)
 
 #### Main Directory
 - capstone_presentation.pdf
@@ -65,7 +65,7 @@ I establish a Content-Based Recommender system built on HBO Max library using Na
 
 ---
 
-### Data Collection and Cleaning: 
+### Data Collection and Cleaning 
 
 **Data Collection:** 
 
@@ -89,7 +89,7 @@ Both mentioned functions are found in the script directory under the function.py
 
 ---
 
-### Exploratory Data Analysis:
+### Exploratory Data Analysis
 
 The HBO Max library is consists of 370 TV shows and 1610 movies. The majority of their content has an MPAA/TV rating of R, TV-MA, and PG-13. Additionally, we see that the top genres are Action-Adventure, Comedy, and Drama. Interestingly, these observations follow the history and identity that HBO had established. The company started as a tv channel, mainly showing movies targeted for adult audiences.
 
@@ -118,7 +118,7 @@ Furthermore, the majority of HBO Max content has an average rating of between 5-
 ![](image/popularity_vs_ratings.png)
 
 ---
-### Modeling:
+### Modeling
 The modeling process can be broken down into three categories: Simple Recommender, Content-Based Recommender using TfidVectorizer, and Content-Based Recommender using BERT. Results are evaluated based on personal judgement and through google recommemdations. 
 
 **Simple Recommender:** This recommender follows a very straightforward approach. It uses various filtering techniques to get the recommended titles. The recommender's goal is to build a generalized system that showcases movies/shows that fall within the same genre while returning popular highly-rated content. The reasoning behind this idea is that audiences tend to prefer popular shows/movies with high ratings. The setup includes generating an engineered feature that multiples popularity score with IMDB ratings; this will help magnify the desired content. Although successful, the model suffers from extreme limitations. First, it lacks user personalization, where it will continue to provide the same recommendations to anyone as long as they put the same genre. Second, the established link between contents is relatively shallow; it only considers similarities in genre.  
@@ -138,7 +138,7 @@ Like Recommender 2, the encoded MPAA/TV ratings will magnify its effect when cal
 
 ---
 
-### Conclusion/Reccomendations/Future Improvements:
+### Conclusion, Recommendations, and Future Improvements
 
 My recommendation to AT&T and Warner Media is to incorporate Recommender 3 into the existing HBO Max application. It is a Content-Based recommender system that is built on the current HBO Max library. This proposal will be an excellent move for the company due to the benefits of Recommender Systems. First, it can improve user's retention rate; catering to user's preferences can lead to long term loyal subscribers. Second, serving similar content leads to habit development that influences users usage pattern. Third, there is a strong correlation between view counts of a video and its top referer video. Lastly, incorporating this recommender will make it easier and more efficient for subscribers to discover new content without the hassle of connecting to another external website. 
 
@@ -148,7 +148,7 @@ As mentioned earlier future aspiration is integrating it into the HBO Max app to
 
 ---
 
-### References:
+### References
 - HTML template taken from https://html5up.net/
 - https://sigmoidal.io/recommender-systems-recommendation-engine/
 - https://www.statista.com/statistics/1136139/hbo-now-to-hbo-max-subscribers-post-launch-us/
