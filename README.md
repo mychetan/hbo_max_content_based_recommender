@@ -8,8 +8,8 @@
 - [Data Directory](#Data-Directory)
 - [Data Collection and Cleaning](#Data-Collection-and-Cleaning)
 - [Modeling](#Modeling)
-- [Conclusion, Recommendations, and Future Improvements](#Conclusion,-Recommendations,-and-Future-Improvement)
-- [References](#Reference)
+- [Conclusion, Recommendations, and Future Improvements](#Conclusion,-Recommendations,-and-Future-Improvements)
+- [References](#References)
 
 ---
 
@@ -25,7 +25,7 @@ I establish a Content-Based Recommender system built on HBO Max library using Na
 
 ---
 
-### Project Files (Repository Organization)
+### Project Files
 
 #### Main Directory
 - capstone_presentation.pdf
